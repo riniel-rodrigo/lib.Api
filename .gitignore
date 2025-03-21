@@ -1,0 +1,43 @@
+# Ignorar arquivos compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar ambientes virtuais
+venv/
+.env
+.env.local
+*.venv
+
+# Ignorar dependências instaladas
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar arquivos de banco de dados SQLite
+*.sqlite3
+*.db
+
+# Ignorar logs e arquivos temporários
+*.log
+logs/
+tmp/
+*.swp
+*.swo
+
+# Ignorar credenciais e configurações sensíveis
+instance/
+config.py
+config.json
+secrets.json
+
+# Ignorar arquivos de cache
+.cache/
+*.pid
+
+# Ignorar arquivos gerados pelo PyCharm/VSCode
+.idea/
+.vscode/
+
+*.sqlite3
+*.db
