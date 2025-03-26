@@ -1,11 +1,13 @@
 from flask import Flask
 from models import init_db
 from routes import books_bp
+from flask_cors import CORS
 
 # Cria a aplicação Flask
 app = Flask(__name__)
+CORS(app)
 
-# Inicializa o banco de dados
+# Inicializa o banco de dadospip freeze > requirements.txt
 init_db()
 
 # Registra o blueprint das rotas
