@@ -3,16 +3,16 @@ from models import init_db
 from routes import books_bp
 from flask_cors import CORS
 
-# Cria a aplicação Flask
+# cria a aplicação Flask
 app = Flask(__name__)
 CORS(app)
 
-# Inicializa o banco de dadospip freeze > requirements.txt
+# inicializa o banco de dadospip freeze > requirements.txt
 init_db()
 
-# Registra o blueprint das rotas
+# registra o blueprint das rotas
 app.register_blueprint(books_bp)
 
-# Inicia o servidor Flask
+# inicia o servidor Flask
 if __name__ == '__main__':
     app.run(debug=True)
